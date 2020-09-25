@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Product>
+<h1>Shop</h1>
+<p>Count:@Model.Count()</p>
+<div class="row">
+    @foreach (var p in Model)
+    {
+    <div class="col-md-3">
+        <div class="border bg-light rounded p-1">
+            <img src="~/img/@(p.ArtId).jpg" class="img-fluid" alt="@p.Title"/>
+            <h3>@p.Category - @p.Size</h3>
+            <ul classs="product-props">
+                <li>Price: $@p.Price</li>
+                <li>Title: @p.Title</li>
+                <li>Description: @p.ArtDescription</li>
+            </ul>
+            <button id="buyButton" class="btn btn-success">Buy</button>
+        </div>
+    </div>
+    }
+</div>

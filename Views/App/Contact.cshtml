@@ -1,0 +1,25 @@
+﻿@model ContactViewModel
+<h2>@ViewBag.Title</h2>
+@section Scripts{
+    <script src="C:\Users\d31845f\source\repos\OnlineShoePortal(DynamicWebsite)\node_modules\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js"></script>
+    <script src="C:\Users\d31845f\source\repos\OnlineShoePortal(DynamicWebsite)\node_modules\jquery-validation\dist\jquery.validate.min.js"></script>
+}
+<form method="post">
+    <label asp-for="Name">Your Name:</label>
+    <br />
+    <input asp-for="Name" />
+    <br />
+    <label asp-for="Email">Email:</label>
+    <br />
+    <input type="email" asp-for="Email" />
+    <br />
+    <label asp-for="Subject">Subject:</label>
+    <br />
+    <input type="text" asp-for="Subject" />
+    <br />
+    <label asp-for="Message">Message:</label>
+    <br />
+    <textarea asp-for="Message" rows="4"></textarea>
+    <br />
+    <input type="submit" value="Send Message" />
+</form>

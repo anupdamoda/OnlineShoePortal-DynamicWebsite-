@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "ToyConectionString":  "server=(localdb)\\ProjectsV13;Database=OnlineToyPortalDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  }
+
+}

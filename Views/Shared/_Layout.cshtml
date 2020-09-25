@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Online Toy Portal: @ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="container">
+        <div>
+            <img id="Logo" src="~/img/Ace Automation Logo.png" /> 
+            <center><h1>Online Toy Portal</h1></center>
+            <center><p> This is a Website for the Online Toy Shopping. One stop shop for all your Toys needs!</p></center>
+        </div>
+    </header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar">
+                <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Index">Home</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="AboutUS">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="LoginorRegister">Login or Register</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Shop">Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h2>@ViewBag.Title</h2>
+        @RenderBody()
+    </section>
+    <center><footer>© 2020 Ace Automation. All Rights Reserved</footer></center>
+    <script src="~/js/index.js"></script>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+</html>

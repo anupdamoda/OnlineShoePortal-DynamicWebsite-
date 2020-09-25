@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Online Toy Portal: @ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <center><img src="~/img/Ace Automation Logo.png" /></center>
+    <div class="product-info">
+        <img src="~/img/batmanLego.jpg" />
+        <h3>Batman Lego</h3>
+        <ul classs="product-props">
+            <li>Price: $19.99</li>
+            <li>Title: Batman Lego</li>
+            <li>Description: Batman Comic Figure</li>
+        </ul>
+        <button id="buyButton" class="btn btn-success">Buy</button>
+    </div>
+
+    <div id="theform">
+        <form>
+            <label>Your Name:</label>
+            <br />
+            <input />
+            <br />
+            <label>Email:</label>
+            <br />
+            <input type="email" />
+            <br />
+            <label>Subject:</label>
+            <br />
+            <input type="text" />
+            <br />
+            <label>Message:</label>
+            <br />
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+   
+</body>
+</html>
